@@ -1,0 +1,80 @@
+[{
+    "type": "Feature",
+    "properties": {
+        "id": 1,
+        "ime": "Biotehniška Fakulteta",
+        "ime_ang": "Faculty of Biotechnology",
+        "tip": "Akademska organizacija",
+        "tip_ang": "Academic organisation",
+        "naslov": "Jamnikarjeva ulica 10, 1000 Ljubljana",
+        "tel_st": "Gorazd Vodopivec, Vesna Gozdar, Polona Franko",
+        "email": "Biotechnical method  |  Natural method  |  Some other method",
+        "clani": "Gorazd Vodopivec  |  Polona Gozdar  |  Vesna Franko",
+        "metode": "Biotehniška metoda  |  Naravoslovna metoda  |  Tretja metoda",
+        "metode_ang": "Biotechnical method  |  Natural method  |  Some other method",
+        "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
+        "opis_ang": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
+        "x": 14.474550642200001,
+        "y": 46.0493200939
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "id": 2,
+        "ime": "Nacionalni Inštitut za Biologijo",
+        "ime_ang": "National Institute for Biology",
+        "tip": "Raziskovalni inštitut",
+        "tip_ang": "Research institute",
+        "naslov": "Večna pot 23, 1000 Ljubljana",
+        "tel_st": "041435654",
+        "email": "nib@email.si",
+        "clani": "Janez Dolinar  |  Jasna Svenšek  |  Matej Žagar  |  Marija Novak",
+        "metode": "Prva metoda  |  Druga metoda  |  Tertja raziskovalna metoda",
+        "metode_ang": "First method  |  Second method  | Third research method",
+        "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
+        "opis_ang": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
+        "x": 14.4688277863,
+        "y": 46.052005472799998
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "id": 3,
+        "ime": "Raziskovalni Inštitut Koper",
+        "ime_ang": "Research Insutute of Koper",
+        "tip": "Raziskovalni inštitut",
+        "tip_ang": "Research institute",
+        "naslov": "Vojkovo nabrežje 55, 5000 Koper",
+        "tel_st": "031787989",
+        "email": "ri.koper@email.si",
+        "clani": "Tanja Ogrizek  |  Jan Medved",
+        "metode": "Reziskovalna metoda  |  Drugačna raziskovalna metoda",
+        "metode_ang": "Research method  |  Different research method",
+        "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
+        "opis_ang": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
+        "x": 13.733061404300001,
+        "y": 45.545292815400003
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "id": 4,
+        "ime": "Mikrobiološko podjetje",
+        "ime_ang": "Microbiology company",
+        "tip": "Privatno podjetje",
+        "tip_ang": "Private company",
+        "naslov": "Tkalski prehod 4, 2000 Maribor",
+        "tel_st": "031334776",
+        "email": "podjetje@email.si",
+        "clani": "Sara Kidrič  |  Andrej Korošec  |  Jože Gorišek",
+        "metode": "Metoda privat podjetja  |  Druga metoda privat podjetja",
+        "metode_ang": "Private company method  |  Second private company method",
+        "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
+        "opis_ang": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
+        "x": 15.6474218643,
+        "y": 46.558250913400002
+    }
+}]
