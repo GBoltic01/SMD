@@ -10,7 +10,7 @@ export default function LocationList() {
             </Typography>
         </Grid>
         <Grid container justifyContent="flex-end">
-            <Chip sx={{ backgroundColor:'white' }} onClick="" label="Sortiraj po: Mesto" />
+            <Chip sx={{ backgroundColor:'white' }} label="Sortiraj po: Mesto" />
         </Grid>
     </Toolbar>
   );

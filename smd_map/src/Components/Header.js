@@ -9,8 +9,8 @@ export default function ButtonAppBar() {
 
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+    <Box position="fixed" sx={{ flexGrow: 1, zIndex: (theme) => theme.zIndex.drawer + 1 }}>
+      <AppBar>
         <Toolbar sx={{ backgroundColor:"white" }}>
             <Grid container spacing={0.5} item xs={10}>
               <Box m={1}>

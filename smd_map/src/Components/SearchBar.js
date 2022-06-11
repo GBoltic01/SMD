@@ -4,7 +4,7 @@ import FilterListIcon from '@mui/icons-material/FilterList';
 
 export default function SearchBar() {
   return (
-    <Toolbar>
+    <Toolbar sx={{mt:10}}>
       <Grid>
         <TextField size="small" id="outlined-basic" label="Išči..." variant="outlined" />
       </Grid>
