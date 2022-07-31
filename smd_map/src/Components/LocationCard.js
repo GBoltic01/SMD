@@ -1,14 +1,17 @@
-import * as React from 'react';
+import React from 'react';
 import { Accordion, AccordionDetails, AccordionSummary, Typography, Container, Grid, Toolbar, Button, Fab } from '@mui/material/';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import HomeIcon from '@mui/icons-material/Home';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import lokacije from "../Data/lokacije.json"
 
-export default function LocationCard() {
+export default function LocationCard({mapRef}) {
+
+  console.log(mapRef)
+
   return (
     <Container>
       {lokacije.map(lokacija => (
-          <Accordion key={lokacija.properties.id} >
+          <Accordion key={lokacija.properties.id}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -16,8 +19,8 @@ export default function LocationCard() {
             >
               <Toolbar>
                 <Grid ml={-3}>
-                  <Fab size="small">
-                    <HomeIcon />
+                  <Fab size="small" onClick={()=> mapRef.setView([lokacija.properties.y, lokacija.properties.x], 17) }>
+                    <LocationOnIcon />
                   </Fab>
                 </Grid>
                 <Grid ml={2}>

@@ -6,15 +6,13 @@ import LocationList from "./Components/LocationList";
 import LocationCard from "./Components/LocationCard";
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import {Box, Divider, Typography, Drawer, IconButton, Grid, Fab } from '@mui/material/';
-import MenuIcon from '@mui/icons-material/Menu'
+import {Box, Typography, Drawer, Grid, Fab } from '@mui/material/';
 import { useState } from 'react'
-import { styled, useTheme } from '@mui/material/styles';
-
 
 function App() {
 
-  const [drawerOpen, setDrawerOpen] = useState(true)
+  const [drawerOpen, setDrawerOpen] = useState(true);
+  const [mapRef, setMapRef] = useState(null)
 
   return (
     <div className="App">
@@ -28,17 +26,17 @@ function App() {
               anchor="left" 
               open={drawerOpen} >
 
-              <SearchBar sx={{ overflow: 'auto' }}/>
+              <SearchBar sx={{ overflow: 'auto' }} />
               <LocationList />
-              <Typography ml={3} mb={2} variant="body2"> MARIBOR </Typography>
-              <LocationCard />
+              <Typography ml={3} mb={2} variant="body2" onClick={()=> mapRef.setView([1,1], 6) }> MARIBOR </Typography>
+              <LocationCard mapRef={mapRef}/>
             </Drawer>
           </Grid>
           <Grid container direction="row" justifyContent="flex-end" >
             <Fab edge='start' onClick={()=> setDrawerOpen(prevCheck => !prevCheck)} size="medium" sx={{zIndex:100000, mt:11, mr:-8}}>
               {drawerOpen ? <ChevronLeftIcon/> : <ChevronRightIcon/>}
             </Fab>
-            <MyMap/>
+            <MyMap myRef={setMapRef}/>
           </Grid>
         </Box>
       </>
