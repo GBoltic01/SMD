@@ -1,6 +1,17 @@
 import React, {useRef} from "react";
+import ReactDOM from 'react-dom';
+import { renderToStaticMarkup } from 'react-dom/server';
 import { Marker, useMap, Tooltip } from "react-leaflet"; 
 import lokacije from "../Data/lokacije.json"
+import L from 'leaflet';
+import AwesomeMarkers from 'leaflet'
+
+
+const locationMarker = new L.Icon({
+    iconUrl: require("/home/gregor/Desktop/Projects/SMD/SMD/smd_map/src/Static/images/pin-dark-blue-01.png"),
+    iconSize: [65, 65],     
+    iconAnchor:  [32.5, 65]
+});
 
 function Markers() {
     const map = useMap();
@@ -9,6 +20,7 @@ function Markers() {
         lokacije.map(lokacije => {
             return (
                 <Marker
+                icon={locationMarker}
                 key={lokacije.properties.id} 
                 position={[lokacije.properties.y, lokacije.properties.x]}
                 eventHandlers={{

@@ -31,13 +31,13 @@
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.6.2",
     "@mui/material": "^5.7.0",
+    "@types/leaflet.awesome-markers": "^2.0.25",
     "leaflet": "^1.8.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-leaflet": "^4.0.0",
     "react-query": "^3.39.0",
-    "react-scripts": "^5.0.1",
-    "react-supercluster": "^1.0.0"
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "web-vitals": "^2.1.4"

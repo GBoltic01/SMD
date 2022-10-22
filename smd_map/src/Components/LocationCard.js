@@ -4,9 +4,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import lokacije from "../Data/lokacije.json"
 
-export default function LocationCard({mapRef}) {
-
-  console.log(mapRef)
+export default function LocationCard({mapRef, name, descr, competencies, research, microorganisms, researchField, employees, website, contact}) {
 
   return (
     <Container>
@@ -25,32 +23,40 @@ export default function LocationCard({mapRef}) {
                 </Grid>
                 <Grid ml={2}>
                   <Grid container direction={'column'}>
-                  <Typography> { lokacija.properties.ime } </Typography>
-                  <Typography> { lokacija.properties.tip } | { lokacija.properties.naslov } </Typography>
+                  <Typography>  { name ? lokacija.properties.ime : lokacija.properties.ime_ang } </Typography>
+                  <Typography variant="body2"> { lokacija.properties.naslov } </Typography>
                   </Grid>
                 </Grid>
               </Toolbar>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography mb={2}> { lokacija.properties.opis } </Typography>
+              <Typography mb={2} variant="body2"> { descr ? lokacija.properties.opis : lokacija.properties.opis_ang } </Typography>
               <Grid container direction={'column'}>
-                <Typography variant="body2"> KONTAKT </Typography>
-                <Typography variant="body2" mb={2}> { lokacija.properties.tel_st }  |  { lokacija.properties.email } </Typography>
+                <Typography variant="body2" sx={{fontWeight:"bold", color:"gray" }}> {competencies ? "METODOLOŠKE KOMPETENCE" : "METHODOLOGICAL COMPETENCIES" } </Typography>
+                <Typography variant="body2" mb={2}> { competencies ? lokacija.properties.metodoloske_kompetence : lokacija.properties.metodoloske_kompetence_ang } </Typography>
               </Grid>
               <Grid container direction={'column'}>
-                <Typography variant="body2"> ČLANI </Typography>
-                <Typography variant="body2" mb={2}> { lokacija.properties.clani } </Typography>
+                <Typography variant="body2" sx={{fontWeight:"bold", color:"gray" }}> {research ? "RAZISKOVALNO DELO" : "RESEARCH AREAS" }</Typography>
+                <Typography variant="body2" mb={2}> { research ? lokacija.properties.raziskovalno_delo : lokacija.properties.raziskovalno_delo_ang }</Typography>
               </Grid>
               <Grid container direction={'column'}>
-                <Typography variant="body2"> METODE </Typography>
-                <Typography variant="body2" mb={2}> { lokacija.properties.metode } </Typography>
+                <Typography variant="body2" sx={{fontWeight:"bold", color:"gray" }}> {microorganisms ? "PODROČJE DELOVANJA/MIKROORGANIZMI" : "FIELD OF WORK/MICROORGANISMS"} </Typography>
+                <Typography variant="body2" mb={2}> { microorganisms ? lokacija.properties.podrocje_delovanja_mikroorganizmi : lokacija.properties.podrocje_delovanja_mikroorganizmi_ang } </Typography>
+              </Grid>
+              <Grid container direction={'column'}>
+                <Typography variant="body2" sx={{fontWeight:"bold", color:"gray" }}> {researchField ? "PODROČJE DELOVANJA" : "FIELD OF WORK"}  </Typography>
+                <Typography variant="body2" mb={2}> { researchField ? lokacija.properties.podrocje_delovanja : lokacija.properties.podrocje_delovanja_ang } </Typography>
+              </Grid>
+              <Grid container direction={'column'}>
+                <Typography variant="body2" sx={{fontWeight:"bold", color:"gray" }}> {employees ? "ŠTEVILO ZAPOSLENIH" : "NUBER OF EMPLOYEES"} </Typography>
+                <Typography variant="body2" mb={2}> { employees ? lokacija.properties.stevilo_zaposlenih : lokacija.properties.stevilo_zaposlenih_ang } </Typography>
               </Grid>
               <Toolbar>
-                <Grid>
-                    <Button variant="contained">Zaposlitev</Button>
+                <Grid container justifyContent="flex-start">
+                    <Button variant="contained" href="https://www.nlzoh.si" target="_blank">{ website ? "Spletna stran" : "Website" }</Button>
                 </Grid>
                 <Grid container justifyContent="flex-end">
-                    <Button variant="outlined">Spletna stran</Button>
+                    <Button variant="outlined" href="https://www.nlzoh.si/kontakti-in-lokacije/#Maribor" target="_blank">{ contact ? "Kontakt" : "Contact" }</Button>
                 </Grid>
               </Toolbar>
             </AccordionDetails>
