@@ -11,7 +11,7 @@ export default function LocationCard({mapRef, name, descr, competencies, researc
       {lokacije.map(lokacija => (
           <Accordion key={lokacija.properties.id}>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<ExpandMoreIcon/>}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >

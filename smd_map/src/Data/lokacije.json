@@ -47,4 +47,79 @@
         "x": 13.729440,
         "y": 45.549005
     }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "id": 3,
+        "ime": "Inštitut za mikrobiologijo in imunologijo",
+        "ime_ang": "Institute for microbiology and immunology",
+        "naslov": "Zaloška 4, 1000 Ljubljana",
+        "opis": "NLZOH je osrednji in največji javnozdravstveni laboratorij, ki deluje na 11 lokacijah po Sloveniji in ima sedež v Mariboru. Na področju mikrobiologije v Kopru delujeta dva oddelka: Oddelek za medicinsko mikrobiologijo KP ter Oddelek za analizo živil, vod in drugih vzorcev okolja KP. Izvajajo se analize s področja diagnostične in sanitarne mikrobiologije.",
+        "opis_ang": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
+        "kontakt": "https://www.nlzoh.si/kontakti-in-lokacije/#Koper",
+        "spletna_stran": "https://www.nlzoh.si/",
+        "metodoloske_kompetence": "Humana medicinska mikrobiologija | Mikrobiološko testiranje hrane, vod in predmetov splošne rabe",
+        "metodoloske_kompetence_ang": "Medicinal microbiology | Microbiological testing of food, waters and other general items | Next generation sequencing (multiple platforms) | Molecular epidemiology | One Health Mikrobiota",
+        "raziskovalno_delo": "Drugo raziskovalno delo",
+        "raziskovalno_delo_ang": "Other research work",
+        "podrocje_delovanja_mikroorganizmi": "Bakterije  |  Glive  |  Virusi  |  Paraziti", 
+        "podrocje_delovanja_mikroorganizmi_ang": "Bacteria    |    Funghi    |    Viruses    |    Parasites", 
+        "podrocje_delovanja": "Medicinska | Sanitarna",
+        "podrocje_delovanja_ang": "Medicinal | Sanitary",
+        "stevilo_zaposlenih": "Več kot 10",
+        "stevilo_zaposlenih_ang": "More than 10",
+        "x": 14.523390,
+        "y": 46.051689
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "id": 4,
+        "ime": "Nacionalni laboratorij za zdravje, okolje in hrano (NLZOH)",
+        "ime_ang": "National laboratory of health, environment and food",
+        "naslov": "Gosposvetska 12, 4000 Kranj",
+        "opis": "NLZOH je osrednji in največji javnozdravstveni laboratorij, ki deluje na 11 lokacijah po Sloveniji in ima sedež v Mariboru. Na področju mikrobiologije v Kopru delujeta dva oddelka: Oddelek za medicinsko mikrobiologijo KP ter Oddelek za analizo živil, vod in drugih vzorcev okolja KP. Izvajajo se analize s področja diagnostične in sanitarne mikrobiologije.",
+        "opis_ang": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
+        "kontakt": "https://www.nlzoh.si/kontakti-in-lokacije/#Koper",
+        "spletna_stran": "https://www.nlzoh.si/",
+        "metodoloske_kompetence": "Humana medicinska mikrobiologija | Mikrobiološko testiranje hrane, vod in predmetov splošne rabe",
+        "metodoloske_kompetence_ang": "Medicinal microbiology | Microbiological testing of food, waters and other general items | Next generation sequencing (multiple platforms) | Molecular epidemiology | One Health Mikrobiota",
+        "raziskovalno_delo": "Drugo raziskovalno delo",
+        "raziskovalno_delo_ang": "Other research work",
+        "podrocje_delovanja_mikroorganizmi": "Bakterije  |  Glive  |  Virusi  |  Paraziti", 
+        "podrocje_delovanja_mikroorganizmi_ang": "Bacteria    |    Funghi    |    Viruses    |    Parasites", 
+        "podrocje_delovanja": "Medicinska | Sanitarna",
+        "podrocje_delovanja_ang": "Medicinal | Sanitary",
+        "stevilo_zaposlenih": "Več kot 10",
+        "stevilo_zaposlenih_ang": "More than 10",
+        "x": 14.354111,
+        "y": 46.247911 
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "id": 5,
+        "ime": "Nacionalni laboratorij za zdravje, okolje in hrano (NLZOH)",
+        "ime_ang": "National laboratory of health, environment and food",
+        "naslov": "Gregorčičeva 5, 3000 Celje",
+        "opis": "NLZOH je osrednji in največji javnozdravstveni laboratorij, ki deluje na 11 lokacijah po Sloveniji in ima sedež v Mariboru. Na področju mikrobiologije v Kopru delujeta dva oddelka: Oddelek za medicinsko mikrobiologijo KP ter Oddelek za analizo živil, vod in drugih vzorcev okolja KP. Izvajajo se analize s področja diagnostične in sanitarne mikrobiologije.",
+        "opis_ang": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
+        "kontakt": "https://www.nlzoh.si/kontakti-in-lokacije/#Koper",
+        "spletna_stran": "https://www.nlzoh.si/",
+        "metodoloske_kompetence": "Humana medicinska mikrobiologija | Mikrobiološko testiranje hrane, vod in predmetov splošne rabe",
+        "metodoloske_kompetence_ang": "Medicinal microbiology | Microbiological testing of food, waters and other general items | Next generation sequencing (multiple platforms) | Molecular epidemiology | One Health Mikrobiota",
+        "raziskovalno_delo": "Drugo raziskovalno delo",
+        "raziskovalno_delo_ang": "Other research work",
+        "podrocje_delovanja_mikroorganizmi": "Bakterije  |  Glive  |  Virusi  |  Paraziti", 
+        "podrocje_delovanja_mikroorganizmi_ang": "Bacteria    |    Funghi    |    Viruses    |    Parasites", 
+        "podrocje_delovanja": "Medicinska | Sanitarna",
+        "podrocje_delovanja_ang": "Medicinal | Sanitary",
+        "stevilo_zaposlenih": "Več kot 10",
+        "stevilo_zaposlenih_ang": "More than 10",
+        "x": 15.26231560766577,
+        "y": 46.23207365883419
+    }
 }]
