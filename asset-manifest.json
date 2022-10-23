@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SMD/static/css/main.fbc9ef59.css",
+    "main.js": "/SMD/static/js/main.059c73f4.js",
+    "static/media/smd-logo-01.png": "/SMD/static/media/smd-logo-01.988e8aa80561f9f9d0b8.png",
+    "static/media/pin-dark-blue-01.png": "/SMD/static/media/pin-dark-blue-01.6d2f45bed5b625cf160a.png",
+    "index.html": "/SMD/index.html",
+    "main.fbc9ef59.css.map": "/SMD/static/css/main.fbc9ef59.css.map",
+    "main.059c73f4.js.map": "/SMD/static/js/main.059c73f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbc9ef59.css",
+    "static/js/main.059c73f4.js"
+  ]
+}
