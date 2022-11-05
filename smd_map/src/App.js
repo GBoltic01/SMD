@@ -33,7 +33,7 @@ function App() {
 
   // ENG/SLO translation click handlers
   const handleClickEng = () => {
-    setTitle('SLOVENIAN MICROBIOLOGY SOCIETY');
+    setTitle('SLOVENIAN MICROBIOLOGICAL SOCIETY');
     setHome('Home');
     setName(false);
     setDescr(false);
@@ -60,6 +60,27 @@ function App() {
     setContact(true);
   }
 
+  const [selectedMarkerID, setSelectedMarkerID] = useState();
+  const [expanded, setExpanded] = useState();
+
+  // e is a marker ID, retrieved from click on a marker!
+
+  const handleMarkerClick = (e) => {
+    console.log(e)
+  }
+
+  const handleChange = (e) => (event, isExpanded) => {
+    //setSelectedMarkerID(e)
+    setExpanded(isExpanded ? e : false);
+  };
+
+  const handleMarkerPressed = (id) => {
+    // If a marker is pressed a second time, close the accordion
+    // setSelectedMarkerID(selectedMarkerID !== id ? id : undefined);
+    setSelectedMarkerID(id)
+    console.log(id)
+  }
+
   return (
     <div className="App">
       <>
@@ -79,6 +100,11 @@ function App() {
                 />
               {/* <Typography ml={3} mb={2} variant="body2"> MARIBOR </Typography> */}
               <LocationCard 
+                selectedMarkerID={selectedMarkerID}
+                handleChange={handleChange}
+                expanded={expanded}
+                handleMarkerPressed={handleMarkerPressed}
+
                 mapRef={ mapRef }
                 name={ name }
                 descr = { descr }
@@ -96,7 +122,12 @@ function App() {
             {/*<Fab edge='start' onClick={()=> setDrawerOpen(prevCheck => !prevCheck)} size="medium" sx={{zIndex:100000, mt:11, mr:-8}}>
               {drawerOpen ? <ChevronLeftIcon/> : <ChevronRightIcon/>}
             </Fab>*/}
-            <MyMap myRef={setMapRef}/>
+            <MyMap 
+              handleMarkerClick={handleMarkerClick} 
+              myRef={setMapRef}
+              handleChange={handleChange}
+              handleMarkerPressed={handleMarkerPressed}/>
+              
           </Grid>
         </Box>
       </>

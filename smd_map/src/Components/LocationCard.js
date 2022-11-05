@@ -4,12 +4,21 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import lokacije from "../Data/lokacije.json"
 
-export default function LocationCard({mapRef, name, descr, competencies, research, microorganisms, researchField, employees, website, contact}) {
+export default function LocationCard({mapRef, name, descr, 
+                                      competencies, research, microorganisms, researchField, employees, website, contact, 
+                                      selectedMarkerID, handleChange, expanded}) {
 
   return (
     <Container>
       {lokacije.map(lokacija => (
-          <Accordion key={lokacija.properties.id}>
+          <Accordion 
+            key={lokacija.properties.id}
+            expanded={expanded === selectedMarkerID}
+            onChange={handleChange(lokacija.properties.id)} 
+
+            /* expanded={expanded === lokacija.properties.id} 
+            onChange={handleChange(lokacija.properties.id)} */
+            >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon/>}
               aria-controls="panel1a-content"
@@ -29,10 +38,10 @@ export default function LocationCard({mapRef, name, descr, competencies, researc
                 </Grid>
               </Toolbar>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails sx={{ whiteSpace:"pre-wrap" }}>
               <Typography mb={2} variant="body2"> { descr ? lokacija.properties.opis : lokacija.properties.opis_ang } </Typography>
               <Grid container direction={'column'}>
-                <Typography variant="body2" sx={{fontWeight:"bold", color:"gray" }}> {competencies ? "METODOLOŠKE KOMPETENCE" : "METHODOLOGICAL COMPETENCIES" } </Typography>
+                <Typography variant="body2" sx={{fontWeight:"bold", color:"gray"}}> {competencies ? "METODOLOŠKE KOMPETENCE" : "METHODOLOGICAL COMPETENCIES" } </Typography>
                 <Typography variant="body2" mb={2}> { competencies ? lokacija.properties.metodoloske_kompetence : lokacija.properties.metodoloske_kompetence_ang } </Typography>
               </Grid>
               <Grid container direction={'column'}>
