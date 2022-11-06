@@ -2,7 +2,7 @@ import React from "react";
 import { MapContainer, TileLayer, ZoomControl } from "react-leaflet"; 
 import Markers from "../Components/Markers"
 
-function MyMap({myRef, handleMarkerClick, handleChange, handleMarkerPressed }) {
+function MyMap({myRef, handleMarkerPressed }) {
 
   return(
     
@@ -18,7 +18,7 @@ function MyMap({myRef, handleMarkerClick, handleChange, handleMarkerPressed }) {
         url="https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png"
       />
       <ZoomControl position="bottomright" />
-      <Markers handleMarkerClick={handleMarkerClick} handleChange={handleChange} handleMarkerPressed={handleMarkerPressed} />     
+      <Markers handleMarkerPressed={handleMarkerPressed} />     
     </MapContainer>
   );
 };

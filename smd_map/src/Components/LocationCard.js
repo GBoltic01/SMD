@@ -6,15 +6,15 @@ import lokacije from "../Data/lokacije.json"
 
 export default function LocationCard({mapRef, name, descr, 
                                       competencies, research, microorganisms, researchField, employees, website, contact, 
-                                      selectedMarkerID, handleChange, expanded}) {
+                                      selectedMarkerID, expanded, handleMarkerPressed}) {
 
   return (
     <Container>
       {lokacije.map(lokacija => (
           <Accordion 
             key={lokacija.properties.id}
-            expanded={expanded === selectedMarkerID}
-            onChange={handleChange(lokacija.properties.id)} 
+            expanded={selectedMarkerID.includes(lokacija.properties.id)}
+            onChange={handleMarkerPressed(lokacija.properties.id)} 
 
             /* expanded={expanded === lokacija.properties.id} 
             onChange={handleChange(lokacija.properties.id)} */
@@ -26,38 +26,38 @@ export default function LocationCard({mapRef, name, descr,
             >
               <Toolbar>
                 <Grid ml={-3}>
-                  <Fab size="small" onClick={()=> mapRef.setView([lokacija.properties.y, lokacija.properties.x], 17) }>
+                  <Fab size="small" onClick={()=> mapRef.setView([lokacija.properties.y, lokacija.properties.x], 17)}>
                     <LocationOnIcon />
                   </Fab>
                 </Grid>
                 <Grid ml={2}>
                   <Grid container direction={'column'}>
-                  <Typography>  { name ? lokacija.properties.ime : lokacija.properties.ime_ang } </Typography>
-                  <Typography variant="body2"> { lokacija.properties.naslov } </Typography>
+                  <Typography sx={{color:"#575757"}}> { name ? lokacija.properties.ime : lokacija.properties.ime_ang } </Typography>
+                  <Typography sx={{color:"#575757"}} variant="body2"> { lokacija.properties.naslov } </Typography>
                   </Grid>
                 </Grid>
               </Toolbar>
             </AccordionSummary>
-            <AccordionDetails sx={{ whiteSpace:"pre-wrap" }}>
+            <AccordionDetails>
               <Typography mb={2} variant="body2"> { descr ? lokacija.properties.opis : lokacija.properties.opis_ang } </Typography>
               <Grid container direction={'column'}>
-                <Typography variant="body2" sx={{fontWeight:"bold", color:"gray"}}> {competencies ? "METODOLOŠKE KOMPETENCE" : "METHODOLOGICAL COMPETENCIES" } </Typography>
+                <Typography variant="body2" sx={{fontWeight:"bold", color:"#575757"}}> {competencies ? "METODOLOŠKE KOMPETENCE" : "METHODOLOGICAL COMPETENCIES" } </Typography>
                 <Typography variant="body2" mb={2}> { competencies ? lokacija.properties.metodoloske_kompetence : lokacija.properties.metodoloske_kompetence_ang } </Typography>
               </Grid>
               <Grid container direction={'column'}>
-                <Typography variant="body2" sx={{fontWeight:"bold", color:"gray" }}> {research ? "RAZISKOVALNO DELO" : "RESEARCH AREAS" }</Typography>
+                <Typography variant="body2" sx={{fontWeight:"bold", color:"#575757" }}> {research ? "RAZISKOVALNO DELO" : "RESEARCH AREAS" }</Typography>
                 <Typography variant="body2" mb={2}> { research ? lokacija.properties.raziskovalno_delo : lokacija.properties.raziskovalno_delo_ang }</Typography>
               </Grid>
               <Grid container direction={'column'}>
-                <Typography variant="body2" sx={{fontWeight:"bold", color:"gray" }}> {microorganisms ? "PODROČJE DELOVANJA/MIKROORGANIZMI" : "FIELD OF WORK/MICROORGANISMS"} </Typography>
+                <Typography variant="body2" sx={{fontWeight:"bold", color:"#575757" }}> {microorganisms ? "PODROČJE DELOVANJA/MIKROORGANIZMI" : "FIELD OF WORK/MICROORGANISMS"} </Typography>
                 <Typography variant="body2" mb={2}> { microorganisms ? lokacija.properties.podrocje_delovanja_mikroorganizmi : lokacija.properties.podrocje_delovanja_mikroorganizmi_ang } </Typography>
               </Grid>
               <Grid container direction={'column'}>
-                <Typography variant="body2" sx={{fontWeight:"bold", color:"gray" }}> {researchField ? "PODROČJE DELOVANJA" : "FIELD OF WORK"}  </Typography>
+                <Typography variant="body2" sx={{fontWeight:"bold", color:"#575757" }}> {researchField ? "PODROČJE DELOVANJA" : "FIELD OF WORK"}  </Typography>
                 <Typography variant="body2" mb={2}> { researchField ? lokacija.properties.podrocje_delovanja : lokacija.properties.podrocje_delovanja_ang } </Typography>
               </Grid>
               <Grid container direction={'column'}>
-                <Typography variant="body2" sx={{fontWeight:"bold", color:"gray" }}> {employees ? "ŠTEVILO ZAPOSLENIH" : "NUBER OF EMPLOYEES"} </Typography>
+                <Typography variant="body2" sx={{fontWeight:"bold", color:"#575757" }}> {employees ? "ŠTEVILO ZAPOSLENIH" : "NUBER OF EMPLOYEES"} </Typography>
                 <Typography variant="body2" mb={2}> { employees ? lokacija.properties.stevilo_zaposlenih : lokacija.properties.stevilo_zaposlenih_ang } </Typography>
               </Grid>
               <Toolbar>

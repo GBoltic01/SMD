@@ -60,25 +60,19 @@ function App() {
     setContact(true);
   }
 
-  const [selectedMarkerID, setSelectedMarkerID] = useState();
+  const [selectedMarkerID, setSelectedMarkerID] = useState([]);
   const [expanded, setExpanded] = useState();
 
-  // e is a marker ID, retrieved from click on a marker!
+  const handleMarkerPressed = (id) => (event, isExpanded) => {
 
-  const handleMarkerClick = (e) => {
-    console.log(e)
-  }
+    setExpanded(isExpanded ? id : true);
+    console.log(expanded)
 
-  const handleChange = (e) => (event, isExpanded) => {
-    //setSelectedMarkerID(e)
-    setExpanded(isExpanded ? e : false);
-  };
-
-  const handleMarkerPressed = (id) => {
-    // If a marker is pressed a second time, close the accordion
-    // setSelectedMarkerID(selectedMarkerID !== id ? id : undefined);
-    setSelectedMarkerID(id)
-    console.log(id)
+    setSelectedMarkerID((prevState) =>
+    prevState.includes(id)
+      ? prevState.filter((markerID) => markerID !== id)
+      : [id]
+    )
   }
 
   return (
@@ -101,7 +95,6 @@ function App() {
               {/* <Typography ml={3} mb={2} variant="body2"> MARIBOR </Typography> */}
               <LocationCard 
                 selectedMarkerID={selectedMarkerID}
-                handleChange={handleChange}
                 expanded={expanded}
                 handleMarkerPressed={handleMarkerPressed}
 
@@ -123,9 +116,7 @@ function App() {
               {drawerOpen ? <ChevronLeftIcon/> : <ChevronRightIcon/>}
             </Fab>*/}
             <MyMap 
-              handleMarkerClick={handleMarkerClick} 
               myRef={setMapRef}
-              handleChange={handleChange}
               handleMarkerPressed={handleMarkerPressed}/>
               
           </Grid>

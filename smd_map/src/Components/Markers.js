@@ -13,7 +13,7 @@ const locationMarker = new L.Icon({
     iconAnchor:  [32.5, 65]
 });
 
-function Markers({handleMarkerClick, handleChange, handleMarkerPressed }) {
+function Markers({handleMarkerPressed }) {
     const map = useMap();
 
     return (
@@ -26,8 +26,7 @@ function Markers({handleMarkerClick, handleChange, handleMarkerPressed }) {
                 eventHandlers={{
                   click: () => {
                     map.setView([lokacije.properties.y, lokacije.properties.x], 16)
-                    handleMarkerPressed(lokacije.properties.id)
-                    console.log("pressed")
+                    handleMarkerPressed(lokacije.properties.id)()
                   }
                 }}>
                     <Tooltip>{lokacije.properties.ime}</Tooltip>
