@@ -6,6 +6,7 @@ import SearchBar from "./Components/SearchBar";
 import LocationList from "./Components/LocationList";
 import LocationCard from "./Components/LocationCard";
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import RestartAltIcon from '@mui/icons-material/RestartAlt';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import {Box, Typography, Drawer, Grid, Fab } from '@mui/material/';
 import { useState } from 'react';
@@ -115,6 +116,9 @@ function App() {
             {/*<Fab edge='start' onClick={()=> setDrawerOpen(prevCheck => !prevCheck)} size="medium" sx={{zIndex:100000, mt:11, mr:-8}}>
               {drawerOpen ? <ChevronLeftIcon/> : <ChevronRightIcon/>}
             </Fab>*/}
+            <Fab edge='start' onClick={()=> mapRef.setView([46.079, 14.717], 9)} size="medium" sx={{zIndex:100000, mt:11, mr:-8}}>
+              <RestartAltIcon/>
+            </Fab>
             <MyMap 
               myRef={setMapRef}
               handleMarkerPressed={handleMarkerPressed}/>

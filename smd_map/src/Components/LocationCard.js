@@ -62,10 +62,10 @@ export default function LocationCard({mapRef, name, descr,
               </Grid>
               <Toolbar>
                 <Grid container justifyContent="flex-start">
-                    <Button variant="contained" href="https://www.nlzoh.si" target="_blank">{ website ? "Spletna stran" : "Website" }</Button>
+                    <Button variant="contained" href={lokacija.properties.spletna_stran} target="_blank">{ website ? "Spletna stran" : "Website" }</Button>
                 </Grid>
                 <Grid container justifyContent="flex-end">
-                    <Button variant="outlined" href="https://www.nlzoh.si/kontakti-in-lokacije/#Maribor" target="_blank">{ contact ? "Kontakt" : "Contact" }</Button>
+                    <Button variant="outlined" href={lokacija.properties.kontakt} target="_blank">{ contact ? "Kontakt" : "Contact" }</Button>
                 </Grid>
               </Toolbar>
             </AccordionDetails>
