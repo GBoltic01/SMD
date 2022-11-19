@@ -1,10 +1,9 @@
 import React, {useRef} from "react";
 import ReactDOM from 'react-dom';
-import { renderToStaticMarkup } from 'react-dom/server';
 import { Marker, useMap, Tooltip } from "react-leaflet"; 
 import lokacije from "../Data/lokacije.json"
 import L from 'leaflet';
-import AwesomeMarkers from 'leaflet'
+import MarkerClusterGroup from '@changey/react-leaflet-markercluster';
 
 
 const locationMarker = new L.Icon({
@@ -15,11 +14,12 @@ const locationMarker = new L.Icon({
 
 function Markers({handleMarkerPressed }) {
     const map = useMap();
-
+    
     return (
+      
         lokacije.map(lokacije => {
             return (
-                <Marker
+              <Marker
                 icon={locationMarker}
                 key={lokacije.properties.id} 
                 position={[lokacije.properties.y, lokacije.properties.x]}
@@ -29,8 +29,8 @@ function Markers({handleMarkerPressed }) {
                     handleMarkerPressed(lokacije.properties.id)()
                   }
                 }}>
-                    <Tooltip>{lokacije.properties.ime}</Tooltip>
-                </Marker>
+                <Tooltip>{lokacije.properties.ime}</Tooltip>
+              </Marker>
               )
         })
     )

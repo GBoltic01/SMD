@@ -122,4 +122,131 @@
         "x": 15.26231560766577,
         "y": 46.23207365883419
     }
-}]
+},
+{
+    "type": "Feature",
+    "properties": {
+        "id": 100,
+        "ime": "Testna lokacija X",
+        "ime_ang": "National laboratory of health, environment and food",
+        "naslov": "Testna lokacija 5, 0000 Test",
+        "opis": "NLZOH je osrednji in največji javnozdravstveni laboratorij, ki deluje na 11 lokacijah po Sloveniji in ima sedež v Mariboru. Na področju mikrobiologije v Celju delujeta dva oddelka: Oddelek za medicinsko mikrobiologijo CE ter Oddelek za analizo živil, vod in drugih vzorcev okolja CE. Izvajajo se analize s področja diagnostične in sanitarne mikrobiologije.",
+        "opis_ang": "NLZOH is a central and biggest laboratory in the public health domain, which operates on 11 different locations across Slovenia and is headquartered in Maribor.",
+        "kontakt": "https://www.nlzoh.si/en/contacts-and-locations/#Celje",
+        "spletna_stran": "https://www.nlzoh.si/",
+        "metodoloske_kompetence": "Humana medicinska mikrobiologija | Mikrobiološko testiranje hrane, vod in predmetov splošne rabe",
+        "metodoloske_kompetence_ang": "Medicinal microbiology | Microbiological testing of food, waters and other general items | Next generation sequencing (multiple platforms) | Molecular epidemiology | One Health Mikrobiota",
+        "raziskovalno_delo": "Drugo raziskovalno delo",
+        "raziskovalno_delo_ang": "Other research work",
+        "podrocje_delovanja_mikroorganizmi": "Bakterije  |  Glive  |  Virusi  |  Paraziti", 
+        "podrocje_delovanja_mikroorganizmi_ang": "Bacteria    |    Funghi    |    Viruses    |    Parasites", 
+        "podrocje_delovanja": "Medicinska | Sanitarna",
+        "podrocje_delovanja_ang": "Medicinal | Sanitary",
+        "stevilo_zaposlenih": "Več kot 10",
+        "stevilo_zaposlenih_ang": "More than 10",
+        "x": 14.513207,
+        "y": 46.053542
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "id": 109,
+        "ime": "Testna lokacija X",
+        "ime_ang": "National laboratory of health, environment and food",
+        "naslov": "Testna lokacija 5, 0000 Test",
+        "opis": "NLZOH je osrednji in največji javnozdravstveni laboratorij, ki deluje na 11 lokacijah po Sloveniji in ima sedež v Mariboru. Na področju mikrobiologije v Celju delujeta dva oddelka: Oddelek za medicinsko mikrobiologijo CE ter Oddelek za analizo živil, vod in drugih vzorcev okolja CE. Izvajajo se analize s področja diagnostične in sanitarne mikrobiologije.",
+        "opis_ang": "NLZOH is a central and biggest laboratory in the public health domain, which operates on 11 different locations across Slovenia and is headquartered in Maribor.",
+        "kontakt": "https://www.nlzoh.si/en/contacts-and-locations/#Celje",
+        "spletna_stran": "https://www.nlzoh.si/",
+        "metodoloske_kompetence": "Humana medicinska mikrobiologija | Mikrobiološko testiranje hrane, vod in predmetov splošne rabe",
+        "metodoloske_kompetence_ang": "Medicinal microbiology | Microbiological testing of food, waters and other general items | Next generation sequencing (multiple platforms) | Molecular epidemiology | One Health Mikrobiota",
+        "raziskovalno_delo": "Drugo raziskovalno delo",
+        "raziskovalno_delo_ang": "Other research work",
+        "podrocje_delovanja_mikroorganizmi": "Bakterije  |  Glive  |  Virusi  |  Paraziti", 
+        "podrocje_delovanja_mikroorganizmi_ang": "Bacteria    |    Funghi    |    Viruses    |    Parasites", 
+        "podrocje_delovanja": "Medicinska | Sanitarna",
+        "podrocje_delovanja_ang": "Medicinal | Sanitary",
+        "stevilo_zaposlenih": "Več kot 10",
+        "stevilo_zaposlenih_ang": "More than 10",
+        "x": 14.508602,
+        "y": 46.043665
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "id": 101,
+        "ime": "Testna lokacija X",
+        "ime_ang": "National laboratory of health, environment and food",
+        "naslov": "Testna lokacija 5, 0000 Test",
+        "opis": "NLZOH je osrednji in največji javnozdravstveni laboratorij, ki deluje na 11 lokacijah po Sloveniji in ima sedež v Mariboru. Na področju mikrobiologije v Celju delujeta dva oddelka: Oddelek za medicinsko mikrobiologijo CE ter Oddelek za analizo živil, vod in drugih vzorcev okolja CE. Izvajajo se analize s področja diagnostične in sanitarne mikrobiologije.",
+        "opis_ang": "NLZOH is a central and biggest laboratory in the public health domain, which operates on 11 different locations across Slovenia and is headquartered in Maribor.",
+        "kontakt": "https://www.nlzoh.si/en/contacts-and-locations/#Celje",
+        "spletna_stran": "https://www.nlzoh.si/",
+        "metodoloske_kompetence": "Humana medicinska mikrobiologija | Mikrobiološko testiranje hrane, vod in predmetov splošne rabe",
+        "metodoloske_kompetence_ang": "Medicinal microbiology | Microbiological testing of food, waters and other general items | Next generation sequencing (multiple platforms) | Molecular epidemiology | One Health Mikrobiota",
+        "raziskovalno_delo": "Drugo raziskovalno delo",
+        "raziskovalno_delo_ang": "Other research work",
+        "podrocje_delovanja_mikroorganizmi": "Bakterije  |  Glive  |  Virusi  |  Paraziti", 
+        "podrocje_delovanja_mikroorganizmi_ang": "Bacteria    |    Funghi    |    Viruses    |    Parasites", 
+        "podrocje_delovanja": "Medicinska | Sanitarna",
+        "podrocje_delovanja_ang": "Medicinal | Sanitary",
+        "stevilo_zaposlenih": "Več kot 10",
+        "stevilo_zaposlenih_ang": "More than 10",
+        "x": 15.419413,
+        "y": 45.846486
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "id": 102,
+        "ime": "Testna lokacija X",
+        "ime_ang": "National laboratory of health, environment and food",
+        "naslov": "Testna lokacija 5, 0000 Test",
+        "opis": "NLZOH je osrednji in največji javnozdravstveni laboratorij, ki deluje na 11 lokacijah po Sloveniji in ima sedež v Mariboru. Na področju mikrobiologije v Celju delujeta dva oddelka: Oddelek za medicinsko mikrobiologijo CE ter Oddelek za analizo živil, vod in drugih vzorcev okolja CE. Izvajajo se analize s področja diagnostične in sanitarne mikrobiologije.",
+        "opis_ang": "NLZOH is a central and biggest laboratory in the public health domain, which operates on 11 different locations across Slovenia and is headquartered in Maribor.",
+        "kontakt": "https://www.nlzoh.si/en/contacts-and-locations/#Celje",
+        "spletna_stran": "https://www.nlzoh.si/",
+        "metodoloske_kompetence": "Humana medicinska mikrobiologija | Mikrobiološko testiranje hrane, vod in predmetov splošne rabe",
+        "metodoloske_kompetence_ang": "Medicinal microbiology | Microbiological testing of food, waters and other general items | Next generation sequencing (multiple platforms) | Molecular epidemiology | One Health Mikrobiota",
+        "raziskovalno_delo": "Drugo raziskovalno delo",
+        "raziskovalno_delo_ang": "Other research work",
+        "podrocje_delovanja_mikroorganizmi": "Bakterije  |  Glive  |  Virusi  |  Paraziti", 
+        "podrocje_delovanja_mikroorganizmi_ang": "Bacteria    |    Funghi    |    Viruses    |    Parasites", 
+        "podrocje_delovanja": "Medicinska | Sanitarna",
+        "podrocje_delovanja_ang": "Medicinal | Sanitary",
+        "stevilo_zaposlenih": "Več kot 10",
+        "stevilo_zaposlenih_ang": "More than 10",
+        "x": 15.419413,
+        "y": 45.846486
+    }
+},
+{
+    "type": "Feature",
+    "properties": {
+        "id": 103,
+        "ime": "Testna lokacija X",
+        "ime_ang": "National laboratory of health, environment and food",
+        "naslov": "Testna lokacija 5, 0000 Test",
+        "opis": "NLZOH je osrednji in največji javnozdravstveni laboratorij, ki deluje na 11 lokacijah po Sloveniji in ima sedež v Mariboru. Na področju mikrobiologije v Celju delujeta dva oddelka: Oddelek za medicinsko mikrobiologijo CE ter Oddelek za analizo živil, vod in drugih vzorcev okolja CE. Izvajajo se analize s področja diagnostične in sanitarne mikrobiologije.",
+        "opis_ang": "NLZOH is a central and biggest laboratory in the public health domain, which operates on 11 different locations across Slovenia and is headquartered in Maribor.",
+        "kontakt": "https://www.nlzoh.si/en/contacts-and-locations/#Celje",
+        "spletna_stran": "https://www.nlzoh.si/",
+        "metodoloske_kompetence": "Humana medicinska mikrobiologija | Mikrobiološko testiranje hrane, vod in predmetov splošne rabe",
+        "metodoloske_kompetence_ang": "Medicinal microbiology | Microbiological testing of food, waters and other general items | Next generation sequencing (multiple platforms) | Molecular epidemiology | One Health Mikrobiota",
+        "raziskovalno_delo": "Drugo raziskovalno delo",
+        "raziskovalno_delo_ang": "Other research work",
+        "podrocje_delovanja_mikroorganizmi": "Bakterije  |  Glive  |  Virusi  |  Paraziti", 
+        "podrocje_delovanja_mikroorganizmi_ang": "Bacteria    |    Funghi    |    Viruses    |    Parasites", 
+        "podrocje_delovanja": "Medicinska | Sanitarna",
+        "podrocje_delovanja_ang": "Medicinal | Sanitary",
+        "stevilo_zaposlenih": "Več kot 10",
+        "stevilo_zaposlenih_ang": "More than 10",
+        "x": 15.419413,
+        "y": 45.846486
+    }
+}
+
+]
