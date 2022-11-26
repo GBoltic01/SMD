@@ -15,20 +15,24 @@ function MyMap({myRef, handleMarkerPressed }) {
     });
   }
 
+// CHANGE THE MAP WIDTH ON WINDOW RESIZE (100/70 => 1200 breakpoint)
+
+// ADD EVENT HANDLER => ON MARKER CLICK OPEN BOTTOM DRAWER AND FOCUS ON SELECTED LOCATION / ISOLATE SELECTED LOCATION 
+
   return(
     
     <MapContainer className="map"
       ref = {myRef}
       center = {[46.120520, 14.815670]}
-      zoom = {9}
+      zoom = {8}
       zoomControl = {false}
-      style = {{height:"100vh", width:"70%", position:"relative", zIndex:1}}
+      style = {{height:"94vh", top:"6vh", width:"100%", position:"relative", zIndex:1}}
     >
       <TileLayer
         attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
         url="https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png"
       />
-      <ZoomControl position="bottomright" />
+      <ZoomControl position="topright" />
       <MarkerClusterGroup key={999} showCoverageOnHover={false} iconCreateFunction={createClusterCustomIcon}>
         <Markers handleMarkerPressed={handleMarkerPressed} /> 
       </MarkerClusterGroup>
