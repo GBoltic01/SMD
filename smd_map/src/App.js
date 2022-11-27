@@ -82,11 +82,11 @@ function App() {
             </MediaQuery>
             <MediaQuery maxWidth={1201}>
               <SwipeableEdgeDrawer
-                selectedMarkerID={selectedMarkerID}
+                /* selectedMarkerID={selectedMarkerID}
                 expanded={expanded}
                 handleMarkerPressed={handleMarkerPressed}
                 mapRef={ mapRef }
-                translation={ translation }
+                translation={ translation } */
               />
             </MediaQuery>
           </Grid>
@@ -94,9 +94,16 @@ function App() {
             {/*<Fab edge='start' onClick={()=> setDrawerOpen(prevCheck => !prevCheck)} size="medium" sx={{zIndex:100000, mt:11, mr:-8}}>
               {drawerOpen ? <ChevronLeftIcon/> : <ChevronRightIcon/>}
             </Fab>*/}
-            <Fab edge='start' onClick={()=> mapRef.setView([46.079, 14.717], 8)} size="medium" sx={{zIndex:10, mt:11, mr:-8}}>
-              <RestartAltIcon/>
-            </Fab>
+            <MediaQuery minWidth={1200}>
+              <Fab edge='start' onClick={()=> mapRef.setView([46.079, 14.717], 8)} size="medium" sx={{zIndex:10, mt:11, mr:-8}}>
+                <RestartAltIcon/>
+              </Fab>
+            </MediaQuery>
+            <MediaQuery maxWidth={1201}>
+              <Fab edge='start' onClick={()=> mapRef.setView([46.079, 14.717], 8)} size="small" sx={{zIndex:10, mt:8, mr:-6 }}>
+                <RestartAltIcon />
+              </Fab>
+            </MediaQuery>
             <MyMap 
               myRef={setMapRef}
               handleMarkerPressed={handleMarkerPressed}/>

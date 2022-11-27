@@ -11,7 +11,7 @@ export default function ButtonAppBar({title, home, handleClickEng, handleClickSl
   return (
     <Box position="relative" sx={{ flexGrow: 1, zIndex: 10}}>
       <AppBar>
-        <Toolbar sx={{ backgroundColor:"white" }}>
+        <Toolbar sx={{ backgroundColor:"white", height:"50px" }}>
           <Grid container spacing={0.5} item xs={10} alignItems="center" direction="row">
             <Box m={1}> 
               <Box component="img" sx={{height:50, width:50}} src={require("/home/gregor/Desktop/Projects/SMD/SMD/smd_map/src/Static/images/smd-logo-01.png")} />

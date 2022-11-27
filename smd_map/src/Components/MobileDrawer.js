@@ -10,6 +10,8 @@ import Skeleton from '@mui/material/Skeleton';
 import Typography from '@mui/material/Typography';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import LocationCard from './LocationCard';
+import { List } from '@mui/material';
+import MobileDrawerList from './MobileDrawerList';
 
 const drawerBleeding = 56;
 
@@ -77,16 +79,22 @@ function SwipeableEdgeDrawer({selectedMarkerID, expanded, handleMarkerPressed, m
             }}
         >
             <Puller />
-            <Typography sx={{ p: 2, color: 'text.secondary' }}>LOKACIJE</Typography>
+            <Typography sx={{ p: 2, color: 'text.secondary' }}>Lokacije</Typography>
         </StyledBox>
             <Box sx={{maxHeight: '100%', overflow: 'auto', mt:2}} >
-                <LocationCard
+                <MobileDrawerList translation={translation} />
+
+
+
+
+
+               {/* <LocationCard
                     selectedMarkerID={selectedMarkerID}
                     expanded={expanded}
                     handleMarkerPressed={handleMarkerPressed}
                     mapRef={ mapRef }
                     translation={ translation }
-                />
+                /> */}
             </Box>
         </SwipeableDrawer>
     </Root>
