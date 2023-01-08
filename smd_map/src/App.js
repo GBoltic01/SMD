@@ -17,7 +17,7 @@ function App() {
   // Handle the hide-show of side panel. Optional functionality
   const [drawerOpen, setDrawerOpen] = useState(true);
 
-  // Handle map actions by clicks on components outside ma container
+  // Handle map actions by clicks on components outside map container
   const [mapRef, setMapRef] = useState(null);
 
   // State variables for ENG/SLO translations
@@ -41,16 +41,20 @@ function App() {
   const [selectedMarkerID, setSelectedMarkerID] = useState([]);
   const [expanded, setExpanded] = useState();
 
+  const [openDrawerOnClick, setOpenDrawerOnClick] = useState(false);
+
   const handleMarkerPressed = (id) => (event, isExpanded) => {
 
+    // Desktop behaviour 
     setExpanded(isExpanded ? id : true);
-    console.log(expanded)
 
     setSelectedMarkerID((prevState) =>
     prevState.includes(id)
       ? prevState.filter((markerID) => markerID !== id)
       : [id]
     )
+    // Mobile behaviour
+    setOpenDrawerOnClick(true)
   }
 
   return (
@@ -82,6 +86,11 @@ function App() {
             </MediaQuery>
             <MediaQuery maxWidth={1201}>
               <SwipeableEdgeDrawer
+                selectedMarkerID={selectedMarkerID}
+                handleMarkerPressed={handleMarkerPressed}
+                mapRef={ mapRef }
+                openDrawerOnClick={openDrawerOnClick}
+                setOpenDrawerOnClick={setOpenDrawerOnClick}
                 /* selectedMarkerID={selectedMarkerID}
                 expanded={expanded}
                 handleMarkerPressed={handleMarkerPressed}
@@ -100,7 +109,7 @@ function App() {
               </Fab>
             </MediaQuery>
             <MediaQuery maxWidth={1201}>
-              <Fab edge='start' onClick={()=> mapRef.setView([46.079, 14.717], 8)} size="small" sx={{zIndex:10, mt:8, mr:-6 }}>
+              <Fab edge='start' onClick={()=> mapRef.setView([46.079, 14.717], 7)} size="small" sx={{zIndex:10, mt:8, mr:-6 }}>
                 <RestartAltIcon />
               </Fab>
             </MediaQuery>

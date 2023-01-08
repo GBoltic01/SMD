@@ -14,7 +14,7 @@ export default function ButtonAppBar({title, home, handleClickEng, handleClickSl
         <Toolbar sx={{ backgroundColor:"white", height:"50px" }}>
           <Grid container spacing={0.5} item xs={10} alignItems="center" direction="row">
             <Box m={1}> 
-              <Box component="img" sx={{height:50, width:50}} src={require("/home/gregor/Desktop/Projects/SMD/SMD/smd_map/src/Static/images/smd-logo-01.png")} />
+              <Box component="img" sx={{marginBottom:'-2px', height:50, width:50}} src={require("/home/gregor/Desktop/Projects/SMD/SMD/smd_map/src/Static/images/smd-logo-01.png")} />
             </Box>
             <Box m={1}>
               <MediaQuery minWidth={616}>
@@ -36,8 +36,8 @@ export default function ButtonAppBar({title, home, handleClickEng, handleClickSl
           </MediaQuery>
           <MediaQuery maxWidth={615}>
             <Grid  container justifyContent="flex-end" item xs={5}>
-              <Button sx={{color: "gray", maxWidth: '40px', minWidth:"40px", fontSize:{xs:'13px', md:'16px'}}} onClick={handleClickSlo}> SLO </Button> 
-              <Button sx={{color: "gray", maxWidth: '40px', minWidth:"40px", fontSize:{xs:'13px', md:'16px'}}} onClick={handleClickEng}> ENG </Button>
+              <Button sx={{color: "gray", marginBottom:'-7px', maxWidth: '40px', minWidth:"40px", fontSize:{xs:'13px', md:'16px'}}} onClick={handleClickSlo}> SLO </Button> 
+              <Button sx={{color: "gray", marginBottom:'-7px', maxWidth: '40px', minWidth:"40px", fontSize:{xs:'13px', md:'16px'}}} onClick={handleClickEng}> ENG </Button>
             </Grid>
           </MediaQuery>
         </Toolbar>

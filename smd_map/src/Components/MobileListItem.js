@@ -10,10 +10,10 @@ function MobileListItem({ handleClickDetails }) {
   return(
     <>
       {lokacije.map(lokacija => (
-        <List component="nav" aria-label="mailbox folders">
+        <List key={lokacija.properties.id} component="nav" aria-label="mailbox folders">
           <Grid container direction="row" justifyContent="center" alignItems="center"  >
             <Grid xs={10} >
-              <ListItem button>
+              <ListItem>
                 <ListItemText primary={ lokacija.properties.ime } secondary={ lokacija.properties.naslov } />
               </ListItem>
             </Grid>

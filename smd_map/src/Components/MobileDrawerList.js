@@ -12,10 +12,8 @@ function MobileDrawerList({ translation }) {
   const handleClickDetails = () => {
     if (itemClicked === false) {
     setItemClicked(true)
-    console.log(itemClicked)
     } else {
       setItemClicked(false)
-      console.log(itemClicked)
     }
   }
 

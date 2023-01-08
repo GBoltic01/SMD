@@ -46,7 +46,7 @@ function MyMap({myRef, handleMarkerPressed }) {
           center = {[46.120520, 14.815670]}
           zoom = {8}
           zoomControl = {false}
-          style = {{height:"calc(100vh - 120px)", bottom:'65px', marginTop:'120px', width:"100%", position:"relative", zIndex:1}}
+          style = {{height:"calc(100vh - 120px)", bottom:'62px', marginTop:'120px', width:"100%", position:"relative", zIndex:1}}
         >
           <TileLayer
             attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
